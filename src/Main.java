@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Noeud_systeme noeud1=new Noeud_systeme(1,10);
+        Noeud_systeme noeud1=new Noeud_systeme(1,100);
         Noeud_systeme noeud2=new Noeud_systeme(2,10);
         Noeud_systeme noeud3=new Noeud_systeme(3,200);
         Noeud_systeme noeud4=new Noeud_systeme(4,100);
@@ -105,6 +105,7 @@ public class Main {
 
 
         test1.repartitionclassique(noeudUtilisateur1);
+        System.out.println(noeud1.getListe_donnees());
 
 
 

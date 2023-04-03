@@ -20,7 +20,7 @@ public class Noeud {
 
 
     public Noeud(int id_noeud) {
-        this.id = id_noeud;
+        this.id = id_noeud; // donne un id au noeud
 
 
     }

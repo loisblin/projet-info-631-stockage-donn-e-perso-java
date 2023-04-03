@@ -1,6 +1,7 @@
 import java.util.List;
 import java.util.ArrayList;
 public class Noeud_utilisateur extends Noeud {
+    // class Noeud utilisateur sous class de la class noeud
 
     private Noeud_systeme noeud_accesible;
     private int distance;
@@ -40,10 +41,10 @@ public class Noeud_utilisateur extends Noeud {
     }
 
     public Noeud_utilisateur(int id,Noeud_systeme noeud_accesible,int distance) {
-        super(id);
-        this.liste_donnees= new ArrayList<Donnee>();
-        this.distance=distance;
-        this.noeud_accesible=noeud_accesible;
+        super(id); // prend en compte un id comme un noeud
+        this.liste_donnees= new ArrayList<Donnee>(); //liste des donnes par lesquel l'utilisateur est intéressé
+        this.distance=distance;// distance avec le noeud_systeme  accecible
+        this.noeud_accesible=noeud_accesible;// noeud système accecible
     }
     public void add_donnee(Donnee donnee){
         this.liste_donnees.add(donnee);
